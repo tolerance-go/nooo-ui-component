@@ -1,0 +1,18 @@
+# ide
+.vscode
+
+# dependencies
+node_modules
+
+# turbo
+.turbo
+
+# turbo - build ouputs
+coverage
+www
+dist
+**/src/components.d.ts
+**/src/readme.md
+
+# env
+.env

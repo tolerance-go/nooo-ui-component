@@ -1,0 +1,33 @@
+{
+   "private": true,
+   "description": "",
+   "keywords": [],
+   "license": "ISC",
+   "author": "",
+   "type": "module",
+   "scripts": {
+      "bundle": "turbo run lint build test --concurrency=2",
+      "changeset": "changeset",
+      "changeset:publish": "pnpm bundle && changeset publish && git push --follow-tags --no-verify",
+      "changeset:version": "changeset version",
+      "ci": "git pull && pnpm install && pnpm prebuild && pnpm pretest && pnpm bundle && pnpm postbuild",
+      "clean": "git clean -dfX",
+      "format": "prettier '**/(*.{css,js,ts,tsx,md}|package.json|tsconfig.json)' --write",
+      "lint": "pnpm lint:format && pnpm lint:packages",
+      "lint:format": "prettier '**/(*.{css,js,ts,tsx,md}|package.json|tsconfig.json)' --check",
+      "lint:packages": "pnpm -r --if-present run lint",
+      "postbuild": "pnpm -r --if-present run postbuild",
+      "prebuild": "pnpm -r --if-present run prebuild",
+      "prepare": "husky install",
+      "pretest": "pnpm -r --if-present run pretest",
+      "test": "turbo run test --concurrency=2"
+   },
+   "devDependencies": {
+      "@changesets/cli": "^2.26.0",
+      "husky": "^8.0.3",
+      "prettier": "^2.8.3",
+      "prettier-plugin-organize-imports": "^3.2.2",
+      "prettier-plugin-packagejson": "^2.4.0",
+      "turbo": "^1.7.0"
+   }
+}
