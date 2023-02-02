@@ -16,3 +16,5 @@ dist
 
 # env
 .env
+
+docs/.vitepress/cache/
