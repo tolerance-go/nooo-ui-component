@@ -1,10 +1,10 @@
 {
    "name": "@headless-ui-components/picker",
-   "version": "1.0.0",
+   "version": "0.0.0",
    "description": "",
    "keywords": [],
-   "license": "ISC",
-   "author": "",
+   "license": "MIT",
+   "author": "yarnb@foxmail.com",
    "main": "index.js",
    "scripts": {}
 }
