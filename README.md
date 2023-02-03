@@ -8,9 +8,13 @@
 -  [svelte-headlessui](https://svelte-headlessui.goss.io/docs) - [code](https://github.com/rgossiaux/svelte-headlessui) - Unofficial Svelte port of the Headless UI component library
 -  [reaction](https://mailchimp.com/developer/open-commerce/) - [code](https://github.com/reactioncommerce/reaction) - Mailchimp Open Commerce is an API-first, headless commerce platform built using Node.js, React, GraphQL. Deployed via Docker and Kubernetes.
 
+## carousel
+
+- [slick](https://github.com/akiran/react-slick) - React carousel component
+
 ## countdown
 
--  [countdown](https://github.com/ndresx/react-countdown)
+-  [countdown](https://github.com/ndresx/react-countdown) - A customizable countdown component for React.
 
 ## toast
 
